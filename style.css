@@ -1,0 +1,142 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+
+html, body {
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #1f2937;                 
+  background: url("images/view.jpg");
+  background-size: cover;  
+  min-height: 100%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: .3px;
+  margin: 28px 0 6px;
+  color: #ffffff;
+}
+
+form {
+  max-width: 680px;
+  margin: 18px auto 40px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 24px 28px;
+  box-shadow: 0 14px 40px rgba(15,23,42,.06);
+}
+
+form > p {
+  font-weight: 700;
+  margin: 10px 0 6px;
+  color: #111827;
+}
+
+fieldset {
+  border: 1px solid #d1d5db;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 12px;
+  padding: 18px 18px 12px;
+  margin: 8px 0 18px;
+
+  width: flex;
+  box-sizing: border-box;
+  backdrop-filter: blur(6px);
+}
+
+
+legend {
+  font-weight: 600;
+  color: #0f172a;
+  background: rgba(255,255,255,0.8);
+  padding: 0 8px;
+  border-radius: 6px;
+}
+
+ol { 
+  list-style: none; 
+}
+
+ol li {
+  margin: 14px 0 6px;          
+  font-weight: 600;
+  color: #374151;
+}
+
+label {
+  display: block;              
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+input.text,
+select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  background: #fff;
+  outline: none;
+  font-size: 15px;
+}
+
+input.text:focus,
+select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37,99,235,.14);
+}
+
+ol li + input.text,
+ol li + select,
+ol li + input[type="radio"] {
+  margin-top: 2px;
+  margin-bottom: 12px;
+}
+
+input[type="radio"] { 
+  vertical-align: middle; 
+}
+
+ol li + input[type="radio"] { 
+  margin-right: 5px; 
+}
+
+input[type="radio"] + /* teks setelah radio */ * {
+  margin-right: 5px;
+}
+
+ol li + input[type="radio"],
+ol li + input[type="radio"] + * {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 100%;
+  margin-top: 6px;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 12px;
+  background: #2563eb;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: .3px;
+  cursor: pointer;
+  transition: transform .04s ease, background .2s ease;
+}
+
+input[type="submit"]:hover { 
+  background: #1d4ed8; 
+}
+
+input[type="submit"]:active { 
+  transform: translateY(1px); 
+}
+
+select option { 
+  text-transform: capitalize; 
+}
