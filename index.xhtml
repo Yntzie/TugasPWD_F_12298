@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+
+<head>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8"/>
+    <title>Reservation Hotel Room</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+</head>
+
+<body>
+    <h1>Reservation Hotel Room</h1>
+    <form action="">
+        <fieldset >
+            <legend>Personal Data</legend>
+            <ol>
+                <li><label for="name">Name</label></li>
+                <input class="text" type="text" id="name" name="name" />
+                
+                <li><label for="gender">Gender</label></li>
+                <input class="text" type="text" id="gender" name="gender" />
+                
+                <li><label for="email">Email Address</label></li>
+                <input class="text" type="text" id="email" name="email" />
+                
+                <li><label for="telp">Telp Number</label></li>
+                <input class="text" type="text" id="telp" name="telp" />
+            </ol>
+        </fieldset>
+
+    <p>Reservation Room form</p>
+    <ol>
+      <li><label for="resname">Reservation Name</label></li>
+      <input class="text" type="text" id="resname" name="resname" />
+
+      <li><label for="bookdate">Booking date</label></li>
+      <input class="text" type="text" id="bookdate" name="bookdate" />
+
+      <li><label for="roomtype">Room Type</label></li>
+      <select id="roomtype" name="roomtype">
+        <option>Deluxe</option>
+        <option>Superior</option>
+        <option>Suite</option>
+      </select>
+
+      <li><label for="bedtype">Bed Type</label></li>
+      <select id="bedtype" name="bedtype">
+        <option>Single bed</option>
+        <option>Double bed</option>
+        <option>Twin bed</option>
+      </select>
+
+      <li>Breakfast</li>
+      <input type="radio" name="breakfast" value="with" checked="checked" /> With Breakfast
+      <input type="radio" name="breakfast" value="without"/> Whitout Breakfast
+    </ol>
+
+    <fieldset >
+      <legend>Payment</legend>
+      <ol>
+        <li><label for="checkin">Check in date</label></li>
+        <input class="text" type="text" id="checkin" name="checkin" />
+
+        <li><label for="checkout">Check out date</label></li>
+        <input class="text" type="text" id="checkout" name="checkout" />
+
+        <li><label for="payment">Payment Method</label></li>
+        <select id="payment" name="payment">
+          <option>cash</option>
+          <option>credit card</option>
+          <option>debit</option>
+        </select>
+      </ol>
+    </fieldset>
+
+    <p>
+      <input type="submit" value="submit" />
+    </p>
+    </form>
+
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+          var opts = {
+            dateFormat: "Y-m-d",      
+            altInput: true,           
+            altFormat: "d M Y",       
+            allowInput: true
+          };
+          flatpickr("#bookdate",  opts);
+          flatpickr("#checkin",   opts);
+          flatpickr("#checkout",  opts);
+        });
+    </script>
+  </body>
+</html>
